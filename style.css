@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: hwb(177 10% 16%);
+    color: #fff;
+  }
+  
+  header .logo img {
+    height: 100px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .auth-buttons button {
+    padding: 10px 20px;
+    margin-left: 15px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5em;
+  }
+  
+  .hero-content .cta-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .about, .services, .contact {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .card {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 30px;
+    background-color: hsl(0, 87%, 24%);
+    color: #fff;
+    padding: 30px;
+    
+  }
+  
+  footer .social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.7em;
+  
+  }
+  slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .slider img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+  }
+  
+  .slider img.active {
+    opacity: 1;
+  }
+  /* Animations
+/*Add animations using CSS.
+
+css
+/* Add this to style.css */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hero-content, .about, .services, .contact {
+  animation: fadeIn 1ms ease-in-out;
+}
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    list-style: none;
+    width: 200px;
+  }
+  
+  .dropdown-menu li {
+    margin: 10px 0;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  /* Add this to style.css */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  body.dark-mode header,
+  body.dark-mode footer {
+    background-color: #1f1f1f;
+  }
+  
+  body.dark-mode .card {
+    background-color: #1f1f1f;
+    color: #ffffff;
+  }
+  .fab.fa-facebook:hover{color: aqua;}
+  
+  
+  
+
+
+
+  
+  
+  
+  

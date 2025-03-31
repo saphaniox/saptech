@@ -3,136 +3,320 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sap Technologies</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Sap Technologies - Innovative Tech Solutions</title>
+  <meta name="description" content="Sap Technologies provides cutting-edge web development, cloud solutions, AI services, and SAP engineering to transform your business.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Header Section -->
-  <header>
-    <div class="logo">
-      <img src="images/logo.jpg" alt="Sap Technologies Logo">
-    </div>
-    <nav>
-      <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About Us</a></li>
-    <li class="dropdown">
-      <a href="#services">Services <i class="fas fa-caret-down"></i></a>
-      <ul class="dropdown-menu">
-        <li><a href="#web-development">Web Development</a></li>
-        <li><a href="#cloud-solutions">Cloud Solutions</a></li>
-        <li><a href="#ai-solutions">AI Solutions</a></li>
-        <li><a href="#sap-engineering">SAP Engineering</a></li>
-        <li><a href="#software-developments">Software development</a></li>
-      </ul>
-    </li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          <img src="images/logo.jpg" alt="Sap Technologies Logo" width="150">
+        </div>
+        
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li class="dropdown">
+              <a href="#services">Services <i class="fas fa-caret-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#web-development">Web Development</a></li>
+                <li><a href="#cloud-solutions">Cloud Solutions</a></li>
+                <li><a href="#ai-solutions">AI Solutions</a></li>
+                <li><a href="#sap-engineering">SAP Engineering</a></li>
+                <li><a href="#software-development">Software Development</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
 
-    <div class="auth-buttons">
-      <button onclick="window.location.href='login.html'">Login</button>
-      <button onclick="window.location.href='signup.html'">Sign Up</button>
+        <div class="auth-buttons">
+          <button class="btn btn-outline" onclick="window.location.href='login.html'">Login</button>
+          <button class="btn btn-primary" onclick="window.location.href='signup.html'">Sign Up</button>
+        </div>
+        
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
     </div>
-    <!-- Add this to the header -->
-<button id="dark-mode-toggle">Toggle Dark Mode</button>
-
   </header>
 
   <!-- Hero Section -->
-
-<section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Welcome to SAP Technologies,<br>
-      Dear muslims we understand how important ramadan is,for that matter therefore may this month bring love,light and harmony in your lives</h1>
-      
-      <p> Transferring your imaginations to real life</p>
-      
-      <a href="#services" class="cta-button">Explore Services</a>
-    </div>
-    <div class="hero-image">
-      <div class="slider">
-        <img src="images/banner1.png" alt="Banner 1" class="active">
-        <img src="images/banner2.jpg" alt="Banner 2">
-        <img src="images/banner3.jpg" alt="Banner 3">
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1>Innovative Tech Solutions for Your Business</h1>
+          <p class="ramadan-message">To our Muslim clients and partners, may this Ramadan bring peace, prosperity, and blessings to your lives and businesses.</p>
+          <p class="tagline">Transforming your vision into digital reality</p>
+          <div class="hero-cta">
+            <a href="#services" class="btn btn-primary">Explore Services</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="slider">
+            <div class="slide active">
+              <img src="images/banner1.png" alt="Digital transformation solutions">
+            </div>
+            <div class="slide">
+              <img src="images/banner2.jpg" alt="Cloud computing services">
+            </div>
+            <div class="slide">
+              <img src="images/banner3.jpg" alt="AI and machine learning">
+            </div>
+          </div>
+          <div class="slider-controls">
+            <button class="slider-prev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots"></div>
+            <button class="slider-next" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   
   <!-- About Us Section -->
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>Sap Technologies is a leading provider of innovative tech solutions, helping businesses grow and thrive in the digital age.</p>
+  <section id="about" class="about section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Sap Technologies</h2>
+        <p class="section-subtitle">Driving digital transformation since 2023</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Sap Technologies is a leading provider of innovative tech solutions, helping businesses of all sizes grow and thrive in the digital age. Our team of certified experts is dedicated to delivering cutting-edge services tailored to your specific needs.</p>
+          <p>We combine technical expertise with business acumen to create solutions that not only work flawlessly but also drive real business results.</p>
+          <ul class="about-features">
+            <li><i class="fas fa-check-circle"></i> 50+ Satisfied Clients</li>
+            <li><i class="fas fa-check-circle"></i> 20+ Certified Professionals</li>
+            <li><i class="fas fa-check-circle"></i> 100% Client Satisfaction</li>
+          </ul>
+        </div>
+        <div class="about-image">
+          <img src="images/about.jpg" alt="Our team working together" loading="lazy">
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="service-cards">
-      <div class="card">
-        <img src="images/product1.jpg" alt="Product 1">
-        <h3>Web Development</h3>
-        <p>We build responsive and user-friendly websites tailored to your needs.</p>
+  <section id="services" class="services section-padding bg-light">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p class="section-subtitle">Comprehensive solutions for your digital needs</p>
       </div>
-      <div class="card">
-        <img src="images/product2.jpg" alt="Product 2">
-        <h3>Cloud Solutions</h3>
-        <p>Scalable and secure cloud services for your business.</p>
+      <div class="service-cards">
+        <div class="card" id="web-development">
+          <div class="card-icon">
+            <i class="fas fa-code"></i>
           </div>
+          <h3>Web Development</h3>
+          <p>Custom, responsive websites and web applications built with modern technologies like React, Angular, and Node.js.</p>
+          <a href="#contact" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="card" id="cloud-solutions">
+          <div class="card-icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h3>Cloud Solutions</h3>
+          <p>Scalable and secure cloud infrastructure with AWS, Azure, and Google Cloud, including migration and optimization.</p>
+          <a href="#contact" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
 
-          <div class="card">
-          <img src="images/product3.jpg" alt="Product 3">
+        <div class="card" id="ai-solutions">
+          <div class="card-icon">
+            <i class="fas fa-robot"></i>
+          </div>
           <h3>AI Solutions</h3>
-          <p>Developing intelligence Software applications that can learn,reason and interact with humans.</p>
-          </div>
+          <p>Custom AI and machine learning solutions including chatbots, predictive analytics, and computer vision applications.</p>
+          <a href="#contact" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
 
-          <div class="card">
-            <img src="images/product4.jpg" alt="Product 4">
-            <h3>SAP Engineering </h3>
-            <p>Identifying and resolving problems in electrical,mechanical,electronically and HVAC systems.</p>
-            </div>
-
-            <div class="card">
-              <img src="images/product5.jpg" alt="Product 5">
-              <h3>Software development</h3>
-              <p>Designing,creating,testing and maintaining systems. This involves programming. 
-              </p>
-              </div>
-            </div>
+        <div class="card" id="sap-engineering">
+          <div class="card-icon">
+            <i class="fas fa-cogs"></i>
           </div>
+          <h3>SAP Engineering</h3>
+          <p>End-to-end SAP solutions including implementation, customization, and support for your business processes.</p>
+          <a href="#contact" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="card" id="software-development">
+          <div class="card-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Software Development</h3>
+          <p>Custom software solutions from concept to deployment, including mobile apps and enterprise systems.</p>
+          <a href="#contact" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="card" id="it-consulting">
+          <div class="card-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>IT Consulting</h3>
+          <p>Strategic technology consulting to align your IT infrastructure with your business goals.</p>
+          <a href="#contact" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <section id="contact" class="contact section-padding">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p class="section-subtitle">We'd love to hear from you</p>
+          </div>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Kampala, Uganda</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+256706564628">+256 706 564 628</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:info@saptechnologies.com">info@saptechnologies.com</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4>Working Hours</h4>
+                <p>Monday - Friday: 9:00 - 17:00</p>
+                <p>Saturday: 10:00 - 14:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" placeholder="Your Phone (optional)">
+            </div>
+            <div class="form-group">
+              <select id="service" name="service">
+                <option value="">Select a Service</option>
+                <option value="web-development">Web Development</option>
+                <option value="cloud-solutions">Cloud Solutions</option>
+                <option value="ai-solutions">AI Solutions</option>
+                <option value="sap-engineering">SAP Engineering</option>
+                <option value="software-development">Software Development</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Footer Section -->
-  <footer>
-    <div class="social-media">
-      <a href="https://www.facebook.com/profile.php?id=61563028584961" target=""><i class="fab fa-facebook"></i></a>
-      <a href="https://x.com/SaphanMuganza2?t=-9Ox4ssAxetvwLcFRtQ2YA&s=09" target=""><i class="fab fa-twitter"></i></a>
-      <a href="https://www.linkedin.com/in/saphan-muganza-a893a9258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/saptechnology?igsh=MTRvazFkb2t0Y2pydA==" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="http://t.me/Saphaniox" target=""><i class="fab fa-telegram"></i></a>
-      <a href="https://www.tiktok.com/@sap_technologies?_t=ZM-8uGSncbySv9&_r=1" target=""><i class="fab fa-tiktok"></i></a>
-      <a href="http://wa.me/256706564628" target=""><i class="fab fa-whatsapp"></i></a>
-      <a href="https://www.youtube.com/@Sap-m3w" target=""><i class="fab fa-youtube"></i></a>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo">
+            <img src="images/logo-white.jpg" alt="Sap Technologies Logo" width="150">
+          </div>
+          <p>Transforming businesses through innovative technology solutions tailored to your needs.</p>
+          <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=61563028584961" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/SaphanMuganza2?t=-9Ox4ssAxetvwLcFRtQ2YA&s=09" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/saphan-muganza-a893a9258" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/saptechnology" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="http://t.me/Saphaniox" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+            <a href="http://wa.me/256706564628" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#web-development">Web Development</a></li>
+            <li><a href="#cloud-solutions">Cloud Solutions</a></li>
+            <li><a href="#ai-solutions">AI Solutions</a></li>
+            <li><a href="#sap-engineering">SAP Engineering</a></li>
+            <li><a href="#software-development">Software Development</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Sap Technologies. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="sitemap.html">Sitemap</a>
+        </div>
+      </div>
     </div>
-    <p>&copy; 2025 Sap Technologies. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
-
-
